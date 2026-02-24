@@ -1,0 +1,45 @@
+header {
+    background-color: aqua;
+    width:320px; height:150px; margin:50px auto;
+    display: flex; flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+header > * {
+    border: 2px solid red;
+    width: 50px; height: 50px;
+}
+header h1 {}
+header nav {}
+header nav .gnb {
+    display: flex; flex-flow: row wrap;
+    /* 메인축 교차축 속성 */
+    justify-content: space-between;
+}
+header nav .gnb > li {
+    background-color: yellow;
+    width: calc(100% / 2);
+}
+header nav .gnb > li:nth-child(3) {
+    font-size: 0.6rem;
+    display: flex; flex-flow: column nowrap;
+}
+header nav .gnb > li:nth-child(3) a {}
+header nav .gnb > li:nth-child(3) span {}
+header nav .gnb > li:nth-child(3) em {}
+header nav .gnb > li:first-child {}
+header nav .gnb > li:first-child .sub_bg {
+    background-color:lime;
+    position: absolute;left: 50%; top: 70px;
+    height: 130px; width: 1000%; transform: translateX(-50%);
+    /* display: flex; flex-flow: column nowrap; align-items: center; */
+    text-align: center;
+}
+header nav .gnb > li:first-child .sub_bg ul {
+    background-color: aliceblue; display: inline-block;
+    width: 200px;
+}
+header nav .gnb > li:first-child .sub_bg ul li {}
+header nav .gnb > li:first-child .sub_bg ul li a {}
+main {height: 200vh; background-color: lightgray;}
